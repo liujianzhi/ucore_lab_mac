@@ -34,15 +34,24 @@ Then you could run ucore_lab.
 Debugging ucore_lab needs change every code in Makfile like
 
 ``` makefile
-$(V)$(TERMINAL) -e "gdb -q -x tools/gdbinit"
+TERMINAL        :=gtk-Terminal
+$(V)$(TERMINAL) -e "$(bash)"
 ```
 
 Into 
 
 ``` makefile
-gdb -q -x tools/gdbinit
+TERMINAL        :=osascript
+$(V)$(TERMINAL) -e 'tell app "Terminal" to do script "cd $(mkdir);$(bash)"'
+```
+And add this code on the top of Makefile
+
+``` makefile
+mkdir	:=$(shell pwd)/$(lastword $(MAKEFILE_LIST))
+mkdir   :=$(shell dirname $(mkdir))
 ```
 
 
+Because the gtk-Terminal is not support for Mac. We use apple script to create another termainal window.
 
-Because the gtk-Terminal is not support for Mac. This change will change run a debugger in a new window to this window.
+The example is lab1_makefile.
