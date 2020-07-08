@@ -44,3 +44,4 @@ gdb -q -x tools/gdbinit
 
 
 
+Because the gtk-Terminal is not support for Mac. This change will change run a debugger in a new window to this window.
