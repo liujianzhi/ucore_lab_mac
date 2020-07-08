@@ -19,9 +19,7 @@ Then install [Homebrew](brew.sh). (make sure you are using .., otherwise below o
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
-
-
-Minimal install necessary tools.
+Minimal installation
 
 ``` bash
 brew install i386-elf-gdb gdb cgdb qemu
