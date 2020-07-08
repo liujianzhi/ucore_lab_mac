@@ -53,4 +53,3 @@ The following steps are to explain the changes to the standard code for running 
 >
 >
 >  Because the gtk-Terminal is not support for Mac. We use apple script to create another termainal window.
-
