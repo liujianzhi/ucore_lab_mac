@@ -29,7 +29,7 @@ brew install i386-elf-gdb gdb cgdb qemu
 
 Then you could run ucore_lab. 
 
-The following steps are to explain the changes to the standard code for running on Mac. <B>  !!!!!If you use my code, there is no need to make the following changes!!!!!  </B>
+The following steps are able to explain the changes to the standard code for running on Mac. <B>  !!!!!If you use my code, there is no need to make the following changes!!!!!  </B>
 
 >  Debugging ucore_lab needs change every code in Makfile like
 >
